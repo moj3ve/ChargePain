@@ -1,0 +1,9 @@
+Package: me.memor1es.chargepain
+Name: ChargePain
+Depends: mobilesubstrate
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Install this on a friends phone and she/he will get a surprise when the phone charger gets plugged into the phone
+Maintainer: Memor1es
+Author: Memor1es
+Section: Tweaks
