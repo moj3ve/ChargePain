@@ -10,8 +10,10 @@
         @end
 
 
-        //Audio Player variable
+        //other needed variables
         AVAudioPlayer *player;
+        UIImageView *Image;
+    	UIWindow *Window;
 
         //Sound paths
         NSString *soundPath = [[NSBundle bundleWithPath:@"/Library/Application Support/ChargePain/"] pathForResource:@"goat" ofType:@"caf"];
@@ -30,11 +32,22 @@
         player.volume = 1;
                 
         [player play];
+
+        Window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+      	Image.center = Window.center;
+      	Window.backgroundColor = [UIColor clearColor];
+      	Image = [[UIImageView alloc] initWithImage:[UIImage imageWithContentsOfFile:@"/Library/Application Support/ChargePain/goat.png"]];
+      	Window.hidden = NO;
+      	[Window addSubview: Image];
     } else {
 		%orig;
 	}
     if (self.isOnAC == false) {
         [player stop];
+        Window.alpha = 0;
+        Image.alpha = 0;
+        [Window removeFromSuperview];
+        [Image removeFromSuperview];
     }
 }
 
