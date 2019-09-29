@@ -6,8 +6,5 @@ Description: Install this on a friends phone and she/he will get a surprise when
 Maintainer: ShyMemoriees <memories@memor1es.me>
 Author: ShyMemoriees <memories@memor1es.me>
 Section: Tweaks
-SileoDepiction: https://repo.memor1es.me/depicitions/chpg/index.html
-Depiction: https://repo.memor1es.me/depicitions/chpg/index.html
-Icon: https://repo.memor1es.me/depicitions/chpg/assets/icon.png
-Version: 1.1-2+debug
+Version: 1.1.1-1+debug
 Installed-Size: 584
